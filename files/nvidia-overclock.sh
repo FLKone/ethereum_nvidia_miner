@@ -6,7 +6,7 @@
 
 
 # GPUGraphicsClockOffset
-MY_CLOCK="-250"
+MY_CLOCK="-200"
 # GPUMemoryTransferRateOffset
 MY_MEM="1200"
 
