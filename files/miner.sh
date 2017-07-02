@@ -3,13 +3,13 @@
 
 
 # Your public ethereum address
-MY_ADDRESS="0xfbbc9f870bccadf8847eba29b0ed3755e30c9f0d"
+MY_ADDRESS="0x35bec22e476f70074b51cfc7ee14f974d3a85552"
 # Your mining rig name
 MY_RIG="mine"
 
 # Specifies maximum power limit in watts.
 # Accepts integer and floating point numbers. Only on supported devices from Kepler family.
-MY_WATT="120"
+MY_WATT="110"
 
 
 
