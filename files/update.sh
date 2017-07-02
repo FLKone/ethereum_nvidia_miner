@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-# Update files from https://github.com/Cyclenerd/ethereum_nvidia_miner
+# Update files from https://github.com/FLKone/ethereum_nvidia_miner
 
 echo
 echo "======================================================================"
-echo "Cyclenerd/ethereum_nvidia_miner ISO image UPDATE SCRIPT"
+echo "FLKone/ethereum_nvidia_miner ISO image UPDATE SCRIPT"
 echo 
 echo "Settings are now reset."
 echo "======================================================================"
