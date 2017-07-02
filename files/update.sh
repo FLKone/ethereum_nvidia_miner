@@ -17,22 +17,22 @@ rm ~/.ssh/authorized_keys
 rm ~/.tmux.conf
 
 echo; echo "Update '.bashrc'"
-curl -f https://raw.githubusercontent.com/Cyclenerd/ethereum_nvidia_miner/master/files/bashrc -o .bashrc
+curl -f https://raw.githubusercontent.com/FLKone/ethereum_nvidia_miner/master/files/bashrc -o .bashrc
 echo; echo "Update '.screenrc'"
-curl -f https://raw.githubusercontent.com/Cyclenerd/ethereum_nvidia_miner/master/files/screenrc -o .screenrc
+curl -f https://raw.githubusercontent.com/FLKone/ethereum_nvidia_miner/master/files/screenrc -o .screenrc
 
 echo; echo "Update 'miner.sh'"
-curl -f https://raw.githubusercontent.com/Cyclenerd/ethereum_nvidia_miner/master/files/miner.sh -o miner.sh
+curl -f https://raw.githubusercontent.com/FLKone/ethereum_nvidia_miner/master/files/miner.sh -o miner.sh
 echo; echo "Update 'nvidia-config.sh'"
-curl -f https://raw.githubusercontent.com/Cyclenerd/ethereum_nvidia_miner/master/files/nvidia-config.sh -o nvidia-config.sh
+curl -f https://raw.githubusercontent.com/FLKone/ethereum_nvidia_miner/master/files/nvidia-config.sh -o nvidia-config.sh
 echo; echo "Update 'nvidia-overclock.sh'"
-curl -f https://raw.githubusercontent.com/Cyclenerd/ethereum_nvidia_miner/master/files/nvidia-overclock.sh -o nvidia-overclock.sh
+curl -f https://raw.githubusercontent.com/FLKone/ethereum_nvidia_miner/master/files/nvidia-overclock.sh -o nvidia-overclock.sh
 
 echo; echo "Update 'myip.sh'"
-curl -f https://raw.githubusercontent.com/Cyclenerd/ethereum_nvidia_miner/master/files/myip.sh -o myip.sh
+curl -f https://raw.githubusercontent.com/FLKone/ethereum_nvidia_miner/master/files/myip.sh -o myip.sh
 
 echo; echo "Get 'build_ethereum-mining-etherminer.sh'"
-curl -f https://raw.githubusercontent.com/Cyclenerd/ethereum_nvidia_miner/master/files/build_ethereum-mining-etherminer.sh -o build_ethereum-mining-etherminer.sh
+curl -f https://raw.githubusercontent.com/FLKone/ethereum_nvidia_miner/master/files/build_ethereum-mining-etherminer.sh -o build_ethereum-mining-etherminer.sh
 bash build_ethereum-mining-etherminer.sh
 
 echo
