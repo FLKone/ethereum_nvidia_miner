@@ -6,16 +6,16 @@
 
 
 # GPUGraphicsClockOffset
-MY_CLOCK="150"
+MY_CLOCK="-250"
 # GPUMemoryTransferRateOffset
-MY_MEM="600"
+MY_MEM="1200"
 
 # GPUTargetFanSpeed (%)
-MY_FAN="75"
+MY_FAN="50"
 
 
 # Graphics card 1 to 6
-for MY_DEVICE in {0..5}
+for MY_DEVICE in {0..3}
 do
 	DISPLAY=:0 XAUTHORITY=/var/lib/mdm/:0.Xauth nvidia-settings -a "[gpu:$MY_DEVICE]/GPUPowerMizerMode=1"
 	# Fan speed
