@@ -11,11 +11,11 @@ MY_CLOCK="-200"
 MY_MEM="1200"
 
 # GPUTargetFanSpeed (%)
-MY_FAN="50"
+MY_FAN="55"
 
 
 # Graphics card 1 to 6
-for MY_DEVICE in {0..3}
+for MY_DEVICE in {0..4}
 do
 	DISPLAY=:0 XAUTHORITY=/var/lib/mdm/:0.Xauth nvidia-settings -a "[gpu:$MY_DEVICE]/GPUPowerMizerMode=1"
 	# Fan speed
@@ -24,8 +24,15 @@ do
 	# Grafics clock
 	DISPLAY=:0 XAUTHORITY=/var/lib/mdm/:0.Xauth nvidia-settings -a "[gpu:$MY_DEVICE]/GPUGraphicsClockOffset[3]=$MY_CLOCK"
 	# Memory clock
-	DISPLAY=:0 XAUTHORITY=/var/lib/mdm/:0.Xauth nvidia-settings -a "[gpu:$MY_DEVICE]/GPUMemoryTransferRateOffset[3]=$MY_MEM"
+	# DISPLAY=:0 XAUTHORITY=/var/lib/mdm/:0.Xauth nvidia-settings -a "[gpu:$MY_DEVICE]/GPUMemoryTransferRateOffset[3]=$MY_MEM"
 done
+
+# Memory clock
+DISPLAY=:0 XAUTHORITY=/var/lib/mdm/:0.Xauth nvidia-settings -a "[gpu:0]/GPUMemoryTransferRateOffset[3]=1200"
+DISPLAY=:0 XAUTHORITY=/var/lib/mdm/:0.Xauth nvidia-settings -a "[gpu:1]/GPUMemoryTransferRateOffset[3]=1200"
+DISPLAY=:0 XAUTHORITY=/var/lib/mdm/:0.Xauth nvidia-settings -a "[gpu:2]/GPUMemoryTransferRateOffset[3]=1200"
+DISPLAY=:0 XAUTHORITY=/var/lib/mdm/:0.Xauth nvidia-settings -a "[gpu:3]/GPUMemoryTransferRateOffset[3]=1200"
+DISPLAY=:0 XAUTHORITY=/var/lib/mdm/:0.Xauth nvidia-settings -a "[gpu:4]/GPUMemoryTransferRateOffset[3]=1200"
 
 echo
 echo "Done"
